@@ -1,2 +1,110 @@
 # Resume
 A Capstone Project : HTML Resume 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Karthik Shetty - Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="profile-header">
+            <div class="profile-info">
+                <h1>Karthik Shetty <img src="./Assets/karthik profile pic.png" height="40" alt="Karthik Shetty" /></h1>
+                <h2>Software Architect & Web Developer</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> karthik@kartech.ai</p>
+                    <p><i class="fas fa-phone"></i> (+91) 9884325262</p>
+                    <p><i class="fas fa-location-dot"></i> Chennai, Tamil Nadu</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/karthik-shetty-094889383/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Karthik-ShettyBoi"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="summary">
+                <h2><i class="fas fa-user"></i> Professional Summary</h2>
+                <p>With over 15 years of experience as Managing Director at <br />
+                    TransGNX HR solution Pvt Ltd, I've cultivated strong leadership <br />
+                    and management skills. An engineering graduate with a deep <br />
+                    passion for programming, I've honed my technical expertise and <br />
+                    now contribute to innovative projects at KarTech AI. My journey <br />
+                    reflects a passion for integrating technology and management to <br />
+                    drive success.</p>
+            </section>
+
+            <section class="experience">
+                <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+                <div class="job">
+                    <h3>Chief Executive Officer</h3>
+                    <p class="company">TransGNX HR solution Pvt Ltd | 2009 - 2020</p>
+                    <ul>
+                        <li>Led the company to achieve significant growth and market presence</li>
+                        <li>Managed a team of over 50 employees across various departments</li>
+                        <li>Implemented strategic initiatives to improve operational efficiency</li>
+                    </ul>
+                    <h3>Chief Technology Officer</h3>
+                    <p class="company">KarTech AI | 2020 - Present</p>
+                    <ul>
+                        <li>Oversee the development and implementation of AI-driven solutions</li>
+                        <li>Collaborate with cross-functional teams to drive innovation</li>
+                        <li>Ensure the scalability and reliability of technology infrastructure</li>
+                    </ul> 
+                </div>
+            </section>
+
+            <section class="education">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="degree">
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <p class="school">University Name | 2016 - 2020</p>
+                </div>
+            </section>
+
+            <section class="skills">
+                <h2><i class="fas fa-code"></i> Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks & Tools</h3>
+                        <ul>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="certifications">
+                <h2><i class="fas fa-certificate"></i> Certifications</h2>
+                <ul>
+                    <li>AWS Certified Developer</li>
+                    <li>Microsoft Certified: Azure Developer Associate</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <small>&copy; <span id="year"></span> Karthik Shetty</small>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
